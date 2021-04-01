@@ -17,6 +17,12 @@ function divide(number1, number2) {
     return number1 / number2;
 }
 
+function operate(number1, operator, number2) {
+   return operator(number1, number2);
+}
+
+// console.log(operate(5, add, 15));
+
 // console.log(`add: ${add(number1, number2)}
 // subtract: ${subtract(number1, number2)}
 // multiply: ${multiply(number1, number2)}
