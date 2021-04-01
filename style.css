@@ -4,6 +4,11 @@ button {
     margin: 5px;
 }
 
+.display {
+    font-size: 20px;
+    margin: 2px 5px;
+}
+
 .subtract {
     font-size: 27px;
     margin: 6px;
