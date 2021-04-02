@@ -73,6 +73,9 @@ function populateTheDisplay(newButtonClicked) {
         } else if (operatorButton === 'subtractButton') {
             answer = subtract(number1, number2);
             document.getElementById("display").innerHTML = answer;
+        } else if (operatorButton === 'multiplyButton') {
+            answer = multiply(number1, number2);
+            document.getElementById("display").innerHTML = answer;
         }
     }
     
