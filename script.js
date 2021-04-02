@@ -26,19 +26,19 @@ let operatorButton;
 let displayNumber = '';
 
 function add(number1, number2) {
-    return number1 + number2;
+    return parseInt(number1) + parseInt(number2);
 }
 
 function subtract(number1, number2) {
-    return number1 - number2;
+    return parseInt(number1) - parseInt(number2);
 } 
 
 function multiply(number1, number2) {
-    return number1 * number2;
+    return parseInt(number1) * parseInt(number2);
 }
 
 function divide(number1, number2) {
-    return number1 / number2;
+    return parseInt(number1) / parseInt(number2);
 }
 
 function operate(number1, operator, number2) {
@@ -64,9 +64,11 @@ function populateTheDisplay(newButtonClicked) {
         console.log(displayNumber);
         document.getElementById("display").innerHTML= displayNumber;
     } else if (newButtonClicked === 'equalButton') {
+        number2 = displayNumber;
+        console.log(add(number1, number2));
         if (operatorButton === 'addButton') {
-            answer = add(number1, displayNumber);
-            console.log(answer);
+            answer = add(number1, number2);
+            // console.log(answer);
             document.getElementById("display").innerHTML= answer;
         }
     }
