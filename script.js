@@ -59,13 +59,13 @@ function populateTheDisplay(newButtonClicked) {
         number1 = displayNumber;
         operatorButton = newButtonClicked;
         displayNumber = '';
-        console.log(number1);
-        console.log(operatorButton);
-        console.log(displayNumber);
+        // console.log(number1);
+        // console.log(operatorButton);
+        // console.log(displayNumber);
         document.getElementById("display").innerHTML= displayNumber;
     } else if (newButtonClicked === 'equalButton') {
         number2 = displayNumber;
-        console.log(add(number1, number2));
+        // console.log(add(number1, number2));
         if (operatorButton === 'addButton') {
             answer = add(number1, number2);
             // console.log(answer);
