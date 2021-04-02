@@ -69,7 +69,10 @@ function populateTheDisplay(newButtonClicked) {
         if (operatorButton === 'addButton') {
             answer = add(number1, number2);
             // console.log(answer);
-            document.getElementById("display").innerHTML= answer;
+            document.getElementById("display").innerHTML = answer;
+        } else if (operatorButton === 'subtractButton') {
+            answer = subtract(number1, number2);
+            document.getElementById("display").innerHTML = answer;
         }
     }
     
